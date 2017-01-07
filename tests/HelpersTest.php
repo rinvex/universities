@@ -34,18 +34,18 @@ class HelpersTest extends PHPUnit_Framework_TestCase
                 'street' => 'PO Box 12613, Nahdet Misr Street',
                 'city' => 'Giza',
                 'province' => 'Cairo',
-                'postal_code' => null
+                'postal_code' => null,
             ],
             'contact' => [
                 'telephone' => '+20(2) 572-9584',
                 'website' => 'http://www.cu.edu.eg',
                 'email' => 'scc@cu.edu.eg',
-                'fax' => '+20(2) 568-8884'
+                'fax' => '+20(2) 568-8884',
             ],
             'funding' => 'Public',
             'languages' => null,
             'academic_year' => 'September to June (September-January; January-June)',
-            'accrediting_agency' => null
+            'accrediting_agency' => null,
         ];
 
         $this->assertEquals($egypt, university('cairo-university', false));
