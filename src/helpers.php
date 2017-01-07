@@ -34,14 +34,14 @@ if (! function_exists('university')) {
 
 if (! function_exists('universities')) {
     /**
-     * Get all universities.
+     * Get universities for given country.
      *
-     * @param bool $hydrate
+     * @param string|null $country
      *
      * @return array
      */
-    function universities($hydrate = false)
+    function universities($country = null)
     {
-        return UniversityLoader::universities($hydrate);
+        return UniversityLoader::universities($country);
     }
 }
