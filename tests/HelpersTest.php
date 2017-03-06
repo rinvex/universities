@@ -17,8 +17,8 @@ declare(strict_types=1);
 
 namespace Rinvex\University\Test;
 
-use Rinvex\University\University;
 use PHPUnit_Framework_TestCase;
+use Rinvex\University\University;
 
 class HelpersTest extends PHPUnit_Framework_TestCase
 {
