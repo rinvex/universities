@@ -65,7 +65,7 @@ class UniversityLoader
             static::$universities['names'] = json_decode(static::getFile(__DIR__.'/../resources/names.json'), true);
         }
 
-        return static::$universities['names'][$country] ?? static::$universities['names'];
+        return is_null($country) ? static::$universities['names'] : static::$universities['names'][$country] ?? null;
     }
 
     /**
