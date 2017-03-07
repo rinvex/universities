@@ -16,4 +16,4 @@ This project adheres to [Semantic Versioning](CONTRIBUTING.md).
 ## v1.0.0 - 2017-01-07
 - Commit first draft
 
-[v1.1.0]: https://github.com/rinvex/repository/compare/v1.0.0...v1.1.0
+[v1.1.0]: https://github.com/rinvex/university/compare/v1.0.0...v1.1.0
