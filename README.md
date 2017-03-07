@@ -77,8 +77,8 @@ echo $cairoUniversity->getAccreditingAgency();
 // Get all universities
 $universities = universities();
 
-// Get all universities in Egypt
-$egyptUniversities = universities('egypt');
+// Get all universities in Egypt (by country code)
+$egyptUniversities = universities('eg');
 ```
 
 > **Notes:**
