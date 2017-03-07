@@ -77,7 +77,7 @@ class UniversityLoader
      *
      * @return mixed
      */
-    public static function get($target, $key, $default = null)
+    protected static function get($target, $key, $default = null)
     {
         if (is_null($key)) {
             return $target;
@@ -117,7 +117,7 @@ class UniversityLoader
      *
      * @return array
      */
-    public static function pluck($array, $value, $key = null)
+    protected static function pluck($array, $value, $key = null)
     {
         $results = [];
 
@@ -150,7 +150,7 @@ class UniversityLoader
      *
      * @return array
      */
-    public static function collapse($array)
+    protected static function collapse($array)
     {
         $results = [];
 
