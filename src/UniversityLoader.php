@@ -65,7 +65,7 @@ class UniversityLoader
             static::$universities['names'] = json_decode(static::getFile(__DIR__.'/../resources/names.json'), true);
         }
 
-        return static::$universities['names'][$country] ?? static::$universities['names'];
+        return is_null($country) ? static::$universities['names'] : static::$universities['names'][$country] ?? null;
     }
 
     /**
@@ -77,7 +77,7 @@ class UniversityLoader
      *
      * @return mixed
      */
-    public static function get($target, $key, $default = null)
+    protected static function get($target, $key, $default = null)
     {
         if (is_null($key)) {
             return $target;
@@ -117,7 +117,7 @@ class UniversityLoader
      *
      * @return array
      */
-    public static function pluck($array, $value, $key = null)
+    protected static function pluck($array, $value, $key = null)
     {
         $results = [];
 
@@ -150,7 +150,7 @@ class UniversityLoader
      *
      * @return array
      */
-    public static function collapse($array)
+    protected static function collapse($array)
     {
         $results = [];
 

@@ -18,8 +18,8 @@ declare(strict_types=1);
 namespace Rinvex\University\Test;
 
 use Exception;
-use Rinvex\University\University;
 use PHPUnit_Framework_TestCase;
+use Rinvex\University\University;
 
 class UniversityTest extends PHPUnit_Framework_TestCase
 {

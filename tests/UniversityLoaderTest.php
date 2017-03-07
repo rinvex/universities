@@ -18,20 +18,32 @@ declare(strict_types=1);
 namespace Rinvex\University\Test;
 
 use ReflectionClass;
-use Rinvex\University\University;
 use PHPUnit_Framework_TestCase;
+use Rinvex\University\University;
 use Rinvex\University\UniversityLoader;
 use Rinvex\University\UniversityLoaderException;
 
 class UniversityLoaderTest extends PHPUnit_Framework_TestCase
 {
-    protected function reset_universities_property()
+    /** @var array */
+    protected static $methods;
+
+    public static function setUpBeforeClass()
     {
-        // Reset UniversityLoader::$universities property
         $reflectedLoader = new ReflectionClass(UniversityLoader::class);
-        $reflectedProperty = $reflectedLoader->getProperty('universities');
-        $reflectedProperty->setAccessible(true);
-        $reflectedProperty->setValue(null, null);
+        self::$methods['get'] = $reflectedLoader->getMethod('get');
+        self::$methods['pluck'] = $reflectedLoader->getMethod('pluck');
+        self::$methods['getFile'] = $reflectedLoader->getMethod('getFile');
+        self::$methods['collapse'] = $reflectedLoader->getMethod('collapse');
+
+        foreach (self::$methods as $method) {
+            $method->setAccessible(true);
+        }
+    }
+
+    public static function tearDownAfterClass()
+    {
+        self::$methods = null;
     }
 
     /** @test */
@@ -67,14 +79,12 @@ class UniversityLoaderTest extends PHPUnit_Framework_TestCase
     /** @test */
     public function it_returns_universities_array()
     {
-        $this->reset_universities_property();
         $this->assertEquals(181, count(UniversityLoader::universities()));
     }
 
     /** @test */
     public function it_returns_country_universities_array()
     {
-        $this->reset_universities_property();
         $this->assertEquals(127, count(UniversityLoader::universities('egypt')));
         $this->assertInternalType('array', UniversityLoader::universities('egypt'));
         $this->assertContains('Cairo University', UniversityLoader::universities('egypt'));
@@ -94,22 +104,22 @@ class UniversityLoaderTest extends PHPUnit_Framework_TestCase
         $object = (object) ['users' => ['name' => ['Taylor', 'Otwell']]];
         $array = [(object) ['users' => [(object) ['name' => 'Taylor']]]];
         $dottedArray = ['users' => ['first.name' => 'Taylor', 'middle.name' => null]];
-        $this->assertEquals('Taylor', UniversityLoader::get($object, 'users.name.0'));
-        $this->assertEquals('Taylor', UniversityLoader::get($array, '0.users.0.name'));
-        $this->assertNull(UniversityLoader::get($array, '0.users.3'));
-        $this->assertEquals('Not found', UniversityLoader::get($array, '0.users.3', 'Not found'));
-        $this->assertEquals('Not found', UniversityLoader::get($array, '0.users.3', function () {
+        $this->assertEquals('Taylor', self::$methods['get']->invoke(null, $object, 'users.name.0'));
+        $this->assertEquals('Taylor', self::$methods['get']->invoke(null, $array, '0.users.0.name'));
+        $this->assertNull(self::$methods['get']->invoke(null, $array, '0.users.3'));
+        $this->assertEquals('Not found', self::$methods['get']->invoke(null, $array, '0.users.3', 'Not found'));
+        $this->assertEquals('Not found', self::$methods['get']->invoke(null, $array, '0.users.3', function () {
             return 'Not found';
         }));
-        $this->assertEquals('Taylor', UniversityLoader::get($dottedArray, ['users', 'first.name']));
-        $this->assertNull(UniversityLoader::get($dottedArray, ['users', 'middle.name']));
-        $this->assertEquals('Not found', UniversityLoader::get($dottedArray, ['users', 'last.name'], 'Not found'));
+        $this->assertEquals('Taylor', self::$methods['get']->invoke(null, $dottedArray, ['users', 'first.name']));
+        $this->assertNull(self::$methods['get']->invoke(null, $dottedArray, ['users', 'middle.name']));
+        $this->assertEquals('Not found', self::$methods['get']->invoke(null, $dottedArray, ['users', 'last.name'], 'Not found'));
     }
 
     /** @test */
     public function it_returns_target_when_missing_key()
     {
-        $this->assertEquals(['test'], UniversityLoader::get(['test'], null));
+        $this->assertEquals(['test'], self::$methods['get']->invoke(null, ['test'], null));
     }
 
     /** @test */
@@ -120,8 +130,8 @@ class UniversityLoaderTest extends PHPUnit_Framework_TestCase
             ['name' => 'abigail'],
             ['name' => 'dayle'],
         ];
-        $this->assertEquals(['taylor', 'abigail', 'dayle'], UniversityLoader::get($array, '*.name'));
-        $this->assertEquals(['taylorotwell@gmail.com', null, null], UniversityLoader::get($array, '*.email', 'irrelevant'));
+        $this->assertEquals(['taylor', 'abigail', 'dayle'], self::$methods['get']->invoke(null, $array, '*.name'));
+        $this->assertEquals(['taylorotwell@gmail.com', null, null], self::$methods['get']->invoke(null, $array, '*.email', 'irrelevant'));
         $array = [
             'users' => [
                 ['first' => 'taylor', 'last' => 'otwell', 'email' => 'taylorotwell@gmail.com'],
@@ -130,10 +140,10 @@ class UniversityLoaderTest extends PHPUnit_Framework_TestCase
             ],
             'posts' => null,
         ];
-        $this->assertEquals(['taylor', 'abigail', 'dayle'], UniversityLoader::get($array, 'users.*.first'));
-        $this->assertEquals(['taylorotwell@gmail.com', null, null], UniversityLoader::get($array, 'users.*.email', 'irrelevant'));
-        $this->assertEquals('not found', UniversityLoader::get($array, 'posts.*.date', 'not found'));
-        $this->assertNull(UniversityLoader::get($array, 'posts.*.date'));
+        $this->assertEquals(['taylor', 'abigail', 'dayle'], self::$methods['get']->invoke(null, $array, 'users.*.first'));
+        $this->assertEquals(['taylorotwell@gmail.com', null, null], self::$methods['get']->invoke(null, $array, 'users.*.email', 'irrelevant'));
+        $this->assertEquals('not found', self::$methods['get']->invoke(null, $array, 'posts.*.date', 'not found'));
+        $this->assertNull(self::$methods['get']->invoke(null, $array, 'posts.*.date'));
     }
 
     /** @test */
@@ -161,10 +171,10 @@ class UniversityLoaderTest extends PHPUnit_Framework_TestCase
                 ],
             ],
         ];
-        $this->assertEquals(['taylor', 'abigail', 'abigail', 'dayle', 'dayle', 'taylor'], UniversityLoader::get($array, 'posts.*.comments.*.author'));
-        $this->assertEquals([4, 3, 2, null, null, 1], UniversityLoader::get($array, 'posts.*.comments.*.likes'));
-        $this->assertEquals([], UniversityLoader::get($array, 'posts.*.users.*.name', 'irrelevant'));
-        $this->assertEquals([], UniversityLoader::get($array, 'posts.*.users.*.name'));
+        $this->assertEquals(['taylor', 'abigail', 'abigail', 'dayle', 'dayle', 'taylor'], self::$methods['get']->invoke(null, $array, 'posts.*.comments.*.author'));
+        $this->assertEquals([4, 3, 2, null, null, 1], self::$methods['get']->invoke(null, $array, 'posts.*.comments.*.likes'));
+        $this->assertEquals([], self::$methods['get']->invoke(null, $array, 'posts.*.users.*.name', 'irrelevant'));
+        $this->assertEquals([], self::$methods['get']->invoke(null, $array, 'posts.*.users.*.name'));
     }
 
     /** @test */
@@ -197,28 +207,28 @@ class UniversityLoaderTest extends PHPUnit_Framework_TestCase
                     '#baz',
                 ],
             ],
-        ], UniversityLoader::pluck($data, 'comments'));
-        $this->assertEquals([['#foo', '#bar'], ['#baz']], UniversityLoader::pluck($data, 'comments.tags'));
-        $this->assertEquals([null, null], UniversityLoader::pluck($data, 'foo'));
-        $this->assertEquals([null, null], UniversityLoader::pluck($data, 'foo.bar'));
+        ], self::$methods['pluck']->invoke(null, $data, 'comments'));
+        $this->assertEquals([['#foo', '#bar'], ['#baz']], self::$methods['pluck']->invoke(null, $data, 'comments.tags'));
+        $this->assertEquals([null, null], self::$methods['pluck']->invoke(null, $data, 'foo'));
+        $this->assertEquals([null, null], self::$methods['pluck']->invoke(null, $data, 'foo.bar'));
     }
 
     /** @test */
     public function it_plucks_array_with_array_and_object_values()
     {
         $array = [(object) ['name' => 'taylor', 'email' => 'foo'], ['name' => 'dayle', 'email' => 'bar']];
-        $this->assertEquals(['taylor', 'dayle'], UniversityLoader::pluck($array, 'name'));
-        $this->assertEquals(['taylor' => 'foo', 'dayle' => 'bar'], UniversityLoader::pluck($array, 'email', 'name'));
+        $this->assertEquals(['taylor', 'dayle'], self::$methods['pluck']->invoke(null, $array, 'name'));
+        $this->assertEquals(['taylor' => 'foo', 'dayle' => 'bar'], self::$methods['pluck']->invoke(null, $array, 'email', 'name'));
     }
 
     /** @test */
     public function it_plucks_array_with_nested_keys()
     {
         $array = [['user' => ['taylor', 'otwell']], ['user' => ['dayle', 'rees']]];
-        $this->assertEquals(['taylor', 'dayle'], UniversityLoader::pluck($array, 'user.0'));
-        $this->assertEquals(['taylor', 'dayle'], UniversityLoader::pluck($array, ['user', 0]));
-        $this->assertEquals(['taylor' => 'otwell', 'dayle' => 'rees'], UniversityLoader::pluck($array, 'user.1', 'user.0'));
-        $this->assertEquals(['taylor' => 'otwell', 'dayle' => 'rees'], UniversityLoader::pluck($array, ['user', 1], ['user', 0]));
+        $this->assertEquals(['taylor', 'dayle'], self::$methods['pluck']->invoke(null, $array, 'user.0'));
+        $this->assertEquals(['taylor', 'dayle'], self::$methods['pluck']->invoke(null, $array, ['user', 0]));
+        $this->assertEquals(['taylor' => 'otwell', 'dayle' => 'rees'], self::$methods['pluck']->invoke(null, $array, 'user.1', 'user.0'));
+        $this->assertEquals(['taylor' => 'otwell', 'dayle' => 'rees'], self::$methods['pluck']->invoke(null, $array, ['user', 1], ['user', 0]));
     }
 
     /** @test */
@@ -227,34 +237,34 @@ class UniversityLoaderTest extends PHPUnit_Framework_TestCase
         $array = [
             [
                 'account' => 'a',
-                'users'   => [
+                'users' => [
                     ['first' => 'taylor', 'last' => 'otwell', 'email' => 'foo'],
                 ],
             ],
             [
                 'account' => 'b',
-                'users'   => [
+                'users' => [
                     ['first' => 'abigail', 'last' => 'otwell'],
                     ['first' => 'dayle', 'last' => 'rees'],
                 ],
             ],
         ];
-        $this->assertEquals([['taylor'], ['abigail', 'dayle']], UniversityLoader::pluck($array, 'users.*.first'));
-        $this->assertEquals(['a' => ['taylor'], 'b' => ['abigail', 'dayle']], UniversityLoader::pluck($array, 'users.*.first', 'account'));
-        $this->assertEquals([['foo'], [null, null]], UniversityLoader::pluck($array, 'users.*.email'));
+        $this->assertEquals([['taylor'], ['abigail', 'dayle']], self::$methods['pluck']->invoke(null, $array, 'users.*.first'));
+        $this->assertEquals(['a' => ['taylor'], 'b' => ['abigail', 'dayle']], self::$methods['pluck']->invoke(null, $array, 'users.*.first', 'account'));
+        $this->assertEquals([['foo'], [null, null]], self::$methods['pluck']->invoke(null, $array, 'users.*.email'));
     }
 
     /** @test */
     public function it_collapses_array()
     {
         $array = [[1], [2], [3], ['foo', 'bar'], ['baz', 'boom']];
-        $this->assertEquals([1, 2, 3, 'foo', 'bar', 'baz', 'boom'], UniversityLoader::collapse($array));
+        $this->assertEquals([1, 2, 3, 'foo', 'bar', 'baz', 'boom'], self::$methods['collapse']->invoke(null, $array));
     }
 
     /** @test */
     public function it_gets_file_content()
     {
-        $this->assertStringEqualsFile(__DIR__.'/../resources/names.json', UniversityLoader::getFile(__DIR__.'/../resources/names.json'));
+        $this->assertStringEqualsFile(__DIR__.'/../resources/names.json', self::$methods['getFile']->invoke(null, __DIR__.'/../resources/names.json'));
     }
 
     /** @test */
@@ -262,6 +272,6 @@ class UniversityLoaderTest extends PHPUnit_Framework_TestCase
     {
         $this->expectException(UniversityLoaderException::class);
 
-        UniversityLoader::getFile(__DIR__.'/../resources/invalid.json');
+        self::$methods['getFile']->invoke(null, __DIR__.'/../resources/invalid.json');
     }
 }
