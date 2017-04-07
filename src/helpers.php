@@ -34,14 +34,14 @@ if (! function_exists('university')) {
 
 if (! function_exists('universities')) {
     /**
-     * Get universities for given country.
+     * Get universities for the given country.
      *
-     * @param string|null $country
+     * @param string|null $countryCode
      *
      * @return array
      */
-    function universities($country = null)
+    function universities($countryCode = null)
     {
-        return UniversityLoader::universities($country);
+        return UniversityLoader::universities($countryCode);
     }
 }

@@ -53,19 +53,19 @@ class UniversityLoader
     }
 
     /**
-     * Get universities for given country.
+     * Get universities for the given country.
      *
-     * @param string|null $country
+     * @param string|null $countryCode
      *
      * @return array
      */
-    public static function universities($country = null)
+    public static function universities($countryCode = null)
     {
         if (! isset(static::$universities['names'])) {
             static::$universities['names'] = json_decode(static::getFile(__DIR__.'/../resources/names.json'), true);
         }
 
-        return is_null($country) ? static::$universities['names'] : static::$universities['names'][$country] ?? null;
+        return is_null($countryCode) ? static::$universities['names'] : static::$universities['names'][$countryCode] ?? null;
     }
 
     /**
