@@ -5,10 +5,10 @@ declare(strict_types=1);
 namespace Rinvex\University\Test;
 
 use Exception;
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 use Rinvex\University\University;
 
-class UniversityTest extends PHPUnit_Framework_TestCase
+class UniversityTest extends TestCase
 {
     /** @var array */
     protected $universityArray;

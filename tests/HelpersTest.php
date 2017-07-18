@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace Rinvex\University\Test;
 
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 use Rinvex\University\University;
 
-class HelpersTest extends PHPUnit_Framework_TestCase
+class HelpersTest extends TestCase
 {
     /** @test */
     public function it_returns_university_data_through_helper()

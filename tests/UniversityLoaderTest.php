@@ -5,12 +5,12 @@ declare(strict_types=1);
 namespace Rinvex\University\Test;
 
 use ReflectionClass;
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 use Rinvex\University\University;
 use Rinvex\University\UniversityLoader;
 use Rinvex\University\UniversityLoaderException;
 
-class UniversityLoaderTest extends PHPUnit_Framework_TestCase
+class UniversityLoaderTest extends TestCase
 {
     /** @var array */
     protected static $methods;
