@@ -38,7 +38,7 @@ class University
      *
      * @param array $attributes
      *
-     * @return static
+     * @return $this
      */
     public function setAttributes($attributes)
     {
@@ -63,7 +63,7 @@ class University
      * @param string $key
      * @param mixed  $value
      *
-     * @return static
+     * @return $this
      */
     public function set($key, $value)
     {
