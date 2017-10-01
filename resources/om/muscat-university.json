@@ -1,0 +1,22 @@
+{
+    "name": "Muscat University",
+    "alt_name": null,
+    "country": "Oman",
+    "state": null,
+    "address": {
+        "street": "Sultan Qaboos St, Muscat, Oman",
+        "city": "Muscat",
+        "province": null,
+        "postal_code": null
+    },
+    "contact": {
+        "telephone": "+968 2464 5444",
+        "website": "http:\/\/muscatuniversity.edu.om",
+        "email": "info@muscatuniversity.edu.om",
+        "fax": null
+    },
+    "funding": null,
+    "languages": null,
+    "academic_year": null,
+    "accrediting_agency": null
+}

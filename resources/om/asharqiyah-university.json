@@ -1,0 +1,22 @@
+{
+    "name": "ASharqiyah University",
+    "alt_name": null,
+    "country": "Oman",
+    "state": null,
+    "address": {
+        "street": "Al Yehmadi, Ibra, North Sharqiyah PO.Box 42، Ibra 400, Oman",
+        "city": null,
+        "province": null,
+        "postal_code": null
+    },
+    "contact": {
+        "telephone": "+968 25401000",
+        "website": "http:\/\/www.asu.edu.om",
+        "email": "info@asu.edu.om",
+        "fax": null
+    },
+    "funding": null,
+    "languages": null,
+    "academic_year": null,
+    "accrediting_agency": null
+}
