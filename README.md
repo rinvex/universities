@@ -3,7 +3,6 @@
 **Rinvex University** is a simple and lightweight package for retrieving university details with flexibility. A whole bunch of data including name, country, state, email, website, telephone, address, and much more attributes for the 17k+ known universities worldwide at your fingertips.
 
 [![Packagist](https://img.shields.io/packagist/v/rinvex/university.svg?label=Packagist&style=flat-square)](https://packagist.org/packages/rinvex/university)
-[![VersionEye Dependencies](https://img.shields.io/versioneye/d/php/rinvex:university.svg?label=Dependencies&style=flat-square)](https://www.versioneye.com/php/rinvex:university/)
 [![Scrutinizer Code Quality](https://img.shields.io/scrutinizer/g/rinvex/university.svg?label=Scrutinizer&style=flat-square)](https://scrutinizer-ci.com/g/rinvex/university/)
 [![Code Climate](https://img.shields.io/codeclimate/github/rinvex/university.svg?label=CodeClimate&style=flat-square)](https://codeclimate.com/github/rinvex/university)
 [![Travis](https://img.shields.io/travis/rinvex/university.svg?label=TravisCI&style=flat-square)](https://travis-ci.org/rinvex/university)
