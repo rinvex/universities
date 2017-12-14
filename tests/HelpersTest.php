@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Rinvex\University\Test;
+namespace Rinvex\University\Tests;
 
 use PHPUnit\Framework\TestCase;
 use Rinvex\University\University;
