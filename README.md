@@ -13,6 +13,7 @@
 ## Usage
 
 Install via `composer require rinvex/university`, then use intuitively:
+
 ```php
 // Get single university
 $cairoUniversity = university('cairo-university');
