@@ -52,7 +52,7 @@ class University
      *
      * @return array|null
      */
-    public function getAttributes()
+    public function getAttributes(): ?array
     {
         return $this->attributes;
     }
@@ -108,7 +108,7 @@ class University
      *
      * @return string|null
      */
-    public function getName()
+    public function getName(): ?string
     {
         return $this->get('name');
     }
@@ -118,7 +118,7 @@ class University
      *
      * @return string|null
      */
-    public function getAltName()
+    public function getAltName(): ?string
     {
         return $this->get('alt_name');
     }
@@ -128,7 +128,7 @@ class University
      *
      * @return string|null
      */
-    public function getCountry()
+    public function getCountry(): ?string
     {
         return $this->get('country');
     }
@@ -138,7 +138,7 @@ class University
      *
      * @return string|null
      */
-    public function getState()
+    public function getState(): ?string
     {
         return $this->get('state');
     }
@@ -148,7 +148,7 @@ class University
      *
      * @return array|null
      */
-    public function getAddress()
+    public function getAddress(): ?array
     {
         return $this->get('address');
     }
@@ -158,7 +158,7 @@ class University
      *
      * @return string|null
      */
-    public function getStreet()
+    public function getStreet(): ?string
     {
         return $this->get('address.street');
     }
@@ -168,7 +168,7 @@ class University
      *
      * @return string|null
      */
-    public function getCity()
+    public function getCity(): ?string
     {
         return $this->get('address.city');
     }
@@ -178,7 +178,7 @@ class University
      *
      * @return string|null
      */
-    public function getProvince()
+    public function getProvince(): ?string
     {
         return $this->get('address.province');
     }
@@ -188,7 +188,7 @@ class University
      *
      * @return string|null
      */
-    public function getPostalCode()
+    public function getPostalCode(): ?string
     {
         return $this->get('address.postal_code');
     }
@@ -198,7 +198,7 @@ class University
      *
      * @return array|null
      */
-    public function getContact()
+    public function getContact(): ?array
     {
         return $this->get('contact');
     }
@@ -208,7 +208,7 @@ class University
      *
      * @return string|null
      */
-    public function getTelephone()
+    public function getTelephone(): ?string
     {
         return $this->get('contact.telephone');
     }
@@ -218,7 +218,7 @@ class University
      *
      * @return string|null
      */
-    public function getWebsite()
+    public function getWebsite(): ?string
     {
         return $this->get('contact.website');
     }
@@ -228,7 +228,7 @@ class University
      *
      * @return string|null
      */
-    public function getEmail()
+    public function getEmail(): ?string
     {
         return $this->get('contact.email');
     }
@@ -238,7 +238,7 @@ class University
      *
      * @return string|null
      */
-    public function getFax()
+    public function getFax(): ?string
     {
         return $this->get('contact.fax');
     }
@@ -248,7 +248,7 @@ class University
      *
      * @return string|null
      */
-    public function getFunding()
+    public function getFunding(): ?string
     {
         return $this->get('funding');
     }
@@ -258,7 +258,7 @@ class University
      *
      * @return array|null
      */
-    public function getLanguages()
+    public function getLanguages(): ?array
     {
         return $this->get('languages');
     }
@@ -268,7 +268,7 @@ class University
      *
      * @return string|null
      */
-    public function getAcademicYear()
+    public function getAcademicYear(): ?string
     {
         return $this->get('academic_year');
     }
@@ -278,7 +278,7 @@ class University
      *
      * @return string|null
      */
-    public function getAccreditingAgency()
+    public function getAccreditingAgency(): ?string
     {
         return $this->get('accrediting_agency');
     }
