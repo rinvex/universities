@@ -1,18 +1,5 @@
 <?php
 
-/*
- * NOTICE OF LICENSE
- *
- * Part of the Rinvex University Package.
- *
- * This source file is subject to The MIT License (MIT)
- * that is bundled with this package in the LICENSE file.
- *
- * Package: Rinvex University Package
- * License: The MIT License (MIT)
- * Link:    https://rinvex.com
- */
-
 declare(strict_types=1);
 
 namespace Rinvex\University;
@@ -53,19 +40,19 @@ class UniversityLoader
     }
 
     /**
-     * Get universities for given country.
+     * Get universities for the given country.
      *
-     * @param string|null $country
+     * @param string|null $countryCode
      *
      * @return array
      */
-    public static function universities($country = null)
+    public static function universities($countryCode = null)
     {
         if (! isset(static::$universities['names'])) {
             static::$universities['names'] = json_decode(static::getFile(__DIR__.'/../resources/names.json'), true);
         }
 
-        return is_null($country) ? static::$universities['names'] : static::$universities['names'][$country] ?? null;
+        return is_null($countryCode) ? static::$universities['names'] : static::$universities['names'][$countryCode] ?? null;
     }
 
     /**

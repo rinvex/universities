@@ -3,11 +3,9 @@
 **Rinvex University** is a simple and lightweight package for retrieving university details with flexibility. A whole bunch of data including name, country, state, email, website, telephone, address, and much more attributes for the 17k+ known universities worldwide at your fingertips.
 
 [![Packagist](https://img.shields.io/packagist/v/rinvex/university.svg?label=Packagist&style=flat-square)](https://packagist.org/packages/rinvex/university)
-[![VersionEye Dependencies](https://img.shields.io/versioneye/d/php/rinvex:university.svg?label=Dependencies&style=flat-square)](https://www.versioneye.com/php/rinvex:university/)
 [![Scrutinizer Code Quality](https://img.shields.io/scrutinizer/g/rinvex/university.svg?label=Scrutinizer&style=flat-square)](https://scrutinizer-ci.com/g/rinvex/university/)
 [![Code Climate](https://img.shields.io/codeclimate/github/rinvex/university.svg?label=CodeClimate&style=flat-square)](https://codeclimate.com/github/rinvex/university)
 [![Travis](https://img.shields.io/travis/rinvex/university.svg?label=TravisCI&style=flat-square)](https://travis-ci.org/rinvex/university)
-[![SensioLabs Insight](https://img.shields.io/sensiolabs/i/4505ee8a-52fc-4229-ae93-7e4f2523bda9.svg?label=SensioLabs&style=flat-square)](https://insight.sensiolabs.com/projects/4505ee8a-52fc-4229-ae93-7e4f2523bda9)
 [![StyleCI](https://styleci.io/repos/77772990/shield)](https://styleci.io/repos/77772990)
 [![License](https://img.shields.io/packagist/l/rinvex/university.svg?label=License&style=flat-square)](https://github.com/rinvex/university/blob/develop/LICENSE)
 
@@ -15,6 +13,7 @@
 ## Usage
 
 Install via `composer require rinvex/university`, then use intuitively:
+
 ```php
 // Get single university
 $cairoUniversity = university('cairo-university');
@@ -138,7 +137,7 @@ Bug reports, feature requests, and pull requests are very welcome.
 
 ## Security Vulnerabilities
 
-If you discover a security vulnerability within this project, please send an e-mail to [security@rinvex.com](security@rinvex.com). All security vulnerabilities will be promptly addressed.
+If you discover a security vulnerability within this project, please send an e-mail to [help@rinvex.com](help@rinvex.com). All security vulnerabilities will be promptly addressed.
 
 
 ## About Rinvex
@@ -150,4 +149,4 @@ Rinvex is a software solutions startup, specialized in integrated enterprise sol
 
 This software is released under [The MIT License (MIT)](LICENSE).
 
-(c) 2016-2017 Rinvex LLC, Some rights reserved.
+(c) 2016-2018 Rinvex LLC, Some rights reserved.

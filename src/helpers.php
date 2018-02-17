@@ -1,18 +1,5 @@
 <?php
 
-/*
- * NOTICE OF LICENSE
- *
- * Part of the Rinvex University Package.
- *
- * This source file is subject to The MIT License (MIT)
- * that is bundled with this package in the LICENSE file.
- *
- * Package: Rinvex University Package
- * License: The MIT License (MIT)
- * Link:    https://rinvex.com
- */
-
 declare(strict_types=1);
 
 use Rinvex\University\UniversityLoader;
@@ -34,14 +21,14 @@ if (! function_exists('university')) {
 
 if (! function_exists('universities')) {
     /**
-     * Get universities for given country.
+     * Get universities for the given country.
      *
-     * @param string|null $country
+     * @param string|null $countryCode
      *
      * @return array
      */
-    function universities($country = null)
+    function universities($countryCode = null)
     {
-        return UniversityLoader::universities($country);
+        return UniversityLoader::universities($countryCode);
     }
 }

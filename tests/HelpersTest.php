@@ -1,26 +1,13 @@
 <?php
 
-/*
- * NOTICE OF LICENSE
- *
- * Part of the Rinvex University Package.
- *
- * This source file is subject to The MIT License (MIT)
- * that is bundled with this package in the LICENSE file.
- *
- * Package: Rinvex University Package
- * License: The MIT License (MIT)
- * Link:    https://rinvex.com
- */
-
 declare(strict_types=1);
 
-namespace Rinvex\University\Test;
+namespace Rinvex\University\Tests;
 
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 use Rinvex\University\University;
 
-class HelpersTest extends PHPUnit_Framework_TestCase
+class HelpersTest extends TestCase
 {
     /** @test */
     public function it_returns_university_data_through_helper()

@@ -14,6 +14,7 @@
         "research",
         "language",
         "flexible",
+        "laravel",
         "simple"
     ],
     "license": "MIT",
@@ -42,10 +43,11 @@
         }
     ],
     "require": {
-        "php": "^7.0.0"
+        "php": "^7.1.3"
     },
     "require-dev": {
-        "phpunit/phpunit": "^5.4.0"
+        "codedungeon/phpunit-result-printer": "^0.4.0",
+        "phpunit/phpunit": "^6.0.0"
     },
     "autoload": {
         "files": [
@@ -57,12 +59,13 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Rinvex\\University\\Test\\": "tests"
+            "Rinvex\\University\\Tests\\": "tests"
         }
     },
     "config": {
+        "sort-packages": true,
         "preferred-install": "dist",
-        "sort-packages": true
+        "optimize-autoloader": true
     },
     "extra": {
         "branch-alias": {

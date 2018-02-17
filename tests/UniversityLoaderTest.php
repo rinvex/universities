@@ -1,29 +1,16 @@
 <?php
 
-/*
- * NOTICE OF LICENSE
- *
- * Part of the Rinvex University Package.
- *
- * This source file is subject to The MIT License (MIT)
- * that is bundled with this package in the LICENSE file.
- *
- * Package: Rinvex University Package
- * License: The MIT License (MIT)
- * Link:    https://rinvex.com
- */
-
 declare(strict_types=1);
 
-namespace Rinvex\University\Test;
+namespace Rinvex\University\Tests;
 
 use ReflectionClass;
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 use Rinvex\University\University;
 use Rinvex\University\UniversityLoader;
 use Rinvex\University\UniversityLoaderException;
 
-class UniversityLoaderTest extends PHPUnit_Framework_TestCase
+class UniversityLoaderTest extends TestCase
 {
     /** @var array */
     protected static $methods;
