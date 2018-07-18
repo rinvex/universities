@@ -16,7 +16,7 @@ class UniversityTest extends TestCase
     /** @var \Rinvex\University\University */
     protected $universityObject;
 
-    public function setUp()
+    protected function setUp()
     {
         parent::setUp();
 
