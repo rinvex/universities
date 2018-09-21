@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Rinvex\University\Tests;
+namespace Rinvex\University\Tests\Unit;
 
 use Exception;
 use PHPUnit\Framework\TestCase;
@@ -16,7 +16,7 @@ class UniversityTest extends TestCase
     /** @var \Rinvex\University\University */
     protected $universityObject;
 
-    public function setUp()
+    protected function setUp()
     {
         parent::setUp();
 

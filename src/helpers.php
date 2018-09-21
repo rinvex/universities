@@ -8,14 +8,14 @@ if (! function_exists('university')) {
     /**
      * Get the university by it's slug.
      *
-     * @param string $code
+     * @param string $slug
      * @param bool   $hydrate
      *
      * @return \Rinvex\University\University|array
      */
-    function university($code, $hydrate = true)
+    function university($slug, $hydrate = true)
     {
-        return UniversityLoader::university($code, $hydrate);
+        return UniversityLoader::university($slug, $hydrate);
     }
 }
 
