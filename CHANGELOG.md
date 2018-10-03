@@ -1,9 +1,13 @@
-# Rinvex University Change Log
+# Rinvex Universities Change Log
 
 All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](CONTRIBUTING.md).
 
+
+## [v2.0.0] - 2018-10-01
+- Enforce Consistency
+- Rename package to rinvex/universities
 
 ## [v1.1.2] - 2018-09-21
 - Update composer dependencies
@@ -37,6 +41,7 @@ This project adheres to [Semantic Versioning](CONTRIBUTING.md).
 ## v1.0.0 - 2017-01-07
 - Tag first release
 
-[v1.1.2]: https://github.com/rinvex/university/compare/v1.1.1...v1.1.2
-[v1.1.1]: https://github.com/rinvex/university/compare/v1.1.0...v1.1.1
-[v1.1.0]: https://github.com/rinvex/university/compare/v1.0.0...v1.1.0
+[v2.0.0]: https://github.com/rinvex/universities/compare/v1.1.2...v2.0.0
+[v1.1.2]: https://github.com/rinvex/universities/compare/v1.1.1...v1.1.2
+[v1.1.1]: https://github.com/rinvex/universities/compare/v1.1.0...v1.1.1
+[v1.1.0]: https://github.com/rinvex/universities/compare/v1.0.0...v1.1.0
