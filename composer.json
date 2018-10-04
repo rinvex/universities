@@ -15,7 +15,6 @@
         "research",
         "language",
         "flexible",
-        "laravel",
         "simple"
     ],
     "license": "MIT",
@@ -39,7 +38,7 @@
             "role": "Project Lead"
         },
         {
-            "name": "The Generous Laravel Community",
+            "name": "The Generous PHP Community",
             "homepage": "https://github.com/rinvex/universities/contributors"
         }
     ],
