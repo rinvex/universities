@@ -2,17 +2,17 @@
 
 **Rinvex University** is a simple and lightweight package for retrieving university details with flexibility. A whole bunch of data including name, country, state, email, website, telephone, address, and much more attributes for the 17k+ known universities worldwide at your fingertips.
 
-[![Packagist](https://img.shields.io/packagist/v/rinvex/university.svg?label=Packagist&style=flat-square)](https://packagist.org/packages/rinvex/university)
-[![Scrutinizer Code Quality](https://img.shields.io/scrutinizer/g/rinvex/university.svg?label=Scrutinizer&style=flat-square)](https://scrutinizer-ci.com/g/rinvex/university/)
-[![Code Climate](https://img.shields.io/codeclimate/github/rinvex/university.svg?label=CodeClimate&style=flat-square)](https://codeclimate.com/github/rinvex/university)
-[![Travis](https://img.shields.io/travis/rinvex/university.svg?label=TravisCI&style=flat-square)](https://travis-ci.org/rinvex/university)
+[![Packagist](https://img.shields.io/packagist/v/rinvex/universities.svg?label=Packagist&style=flat-square)](https://packagist.org/packages/rinvex/universities)
+[![Scrutinizer Code Quality](https://img.shields.io/scrutinizer/g/rinvex/universities.svg?label=Scrutinizer&style=flat-square)](https://scrutinizer-ci.com/g/rinvex/universities/)
+[![Code Climate](https://img.shields.io/codeclimate/github/rinvex/universities.svg?label=CodeClimate&style=flat-square)](https://codeclimate.com/github/rinvex/universities)
+[![Travis](https://img.shields.io/travis/rinvex/universities.svg?label=TravisCI&style=flat-square)](https://travis-ci.org/rinvex/universities)
 [![StyleCI](https://styleci.io/repos/77772990/shield)](https://styleci.io/repos/77772990)
-[![License](https://img.shields.io/packagist/l/rinvex/university.svg?label=License&style=flat-square)](https://github.com/rinvex/university/blob/develop/LICENSE)
+[![License](https://img.shields.io/packagist/l/rinvex/universities.svg?label=License&style=flat-square)](https://github.com/rinvex/universities/blob/develop/LICENSE)
 
 
 ## Usage
 
-Install via `composer require rinvex/university`, then use intuitively:
+Install via `composer require rinvex/universities`, then use intuitively:
 
 ```php
 // Get single university
