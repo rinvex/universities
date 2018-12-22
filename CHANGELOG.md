@@ -5,6 +5,10 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](CONTRIBUTING.md).
 
 
+## [v2.0.1] - 2018-12-22
+- Update composer dependencies
+- Add PHP 7.3 support to travis
+
 ## [v2.0.0] - 2018-10-01
 - Enforce Consistency
 - Rename package to rinvex/universities
@@ -41,6 +45,7 @@ This project adheres to [Semantic Versioning](CONTRIBUTING.md).
 ## v1.0.0 - 2017-01-07
 - Tag first release
 
+[v2.0.1]: https://github.com/rinvex/universities/compare/v2.0.0...v2.0.1
 [v2.0.0]: https://github.com/rinvex/universities/compare/v1.1.2...v2.0.0
 [v1.1.2]: https://github.com/rinvex/universities/compare/v1.1.1...v1.1.2
 [v1.1.1]: https://github.com/rinvex/universities/compare/v1.1.0...v1.1.1
