@@ -15,7 +15,7 @@ class UniversityLoaderTest extends TestCase
     /** @var array */
     protected static $methods;
 
-    public static function setUpBeforeClass()
+    public static function setUpBeforeClass(): void
     {
         $reflectedLoader = new ReflectionClass(UniversityLoader::class);
         self::$methods['get'] = $reflectedLoader->getMethod('get');
@@ -28,7 +28,7 @@ class UniversityLoaderTest extends TestCase
         }
     }
 
-    public static function tearDownAfterClass()
+    public static function tearDownAfterClass(): void
     {
         self::$methods = null;
     }
@@ -73,7 +73,7 @@ class UniversityLoaderTest extends TestCase
     public function it_returns_country_universities_array()
     {
         $this->assertEquals(127, count(UniversityLoader::universities('egypt')));
-        $this->assertInternalType('array', UniversityLoader::universities('egypt'));
+        $this->assertIsArray(UniversityLoader::universities('egypt'));
         $this->assertContains('Cairo University', UniversityLoader::universities('egypt'));
     }
 

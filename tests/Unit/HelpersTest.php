@@ -43,7 +43,7 @@ class HelpersTest extends TestCase
     public function it_returns_universities_array_through_helper()
     {
         $this->assertEquals(181, count(universities()));
-        $this->assertInternalType('array', universities('egypt'));
+        $this->assertIsArray(universities('egypt'));
         $this->assertContains('Cairo University', universities('egypt'));
     }
 }
