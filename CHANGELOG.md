@@ -5,6 +5,20 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](CONTRIBUTING.md).
 
 
+## [v3.1.1] - 2019-06-14
+- Add missing universities 
+  - Suez University 
+  - add Zewail City of Science and Technology 
+  - add New York University Abu Dhabi 
+  - add STMIK STIKOM Bali 
+  - add Siddaganga Institute of Technology 
+  - add Al-Hussein Technical University 
+  - add Academy of Cryptography Techniques
+
+## [v3.1.0] - 2019-06-02
+- Update composer deps
+- Drop PHP 7.1 travis test
+
 ## [v3.0.0] - 2019-03-03
 - Rename environment variable QUEUE_DRIVER to QUEUE_CONNECTION
 - Require PHP 7.2 & Laravel 5.8
@@ -50,6 +64,8 @@ This project adheres to [Semantic Versioning](CONTRIBUTING.md).
 ## v1.0.0 - 2017-01-07
 - Tag first release
 
+[v3.1.1]: https://github.com/rinvex/universities/compare/v3.1.0...v3.1.1
+[v3.1.0]: https://github.com/rinvex/universities/compare/v3.0.0...v3.1.0
 [v3.0.0]: https://github.com/rinvex/universities/compare/v2.0.1...v3.0.0
 [v2.0.1]: https://github.com/rinvex/universities/compare/v2.0.0...v2.0.1
 [v2.0.0]: https://github.com/rinvex/universities/compare/v1.1.2...v2.0.0
