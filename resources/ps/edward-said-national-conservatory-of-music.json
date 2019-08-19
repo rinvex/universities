@@ -1,0 +1,22 @@
+{
+  "name": "Edward Said National Conservatory of Music",
+  "alt_name": "ESNCM",
+  "country": "Palestine",
+  "state": null,
+  "address": {
+    "street": "Souq al-Shaab Beit Sahour",
+    "city": "Bethlehem",
+    "province": null,
+    "postal_code": "66676"
+  },
+  "contact": {
+    "telephone": "+970(2) 281-9156",
+    "website": "http://ncm.birzeit.edu/",
+    "email": "info@ncm.birzeit.edu",
+    "fax": "+970(2) 2756797 "
+  },
+  "funding": "Public",
+  "languages": null,
+  "academic_year": null,
+  "accrediting_agency": null
+}
