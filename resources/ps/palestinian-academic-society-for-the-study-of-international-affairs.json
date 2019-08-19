@@ -1,0 +1,22 @@
+{
+  "name": "Palestinian Academic Society for the Study of International Affairs",
+  "alt_name": "PASSIA",
+  "country": "Palestine",
+  "state": null,
+  "address": {
+    "street": "HIND AL-HUSSEINI, ALLEY, 2 WADI AL-JOZ",
+    "city": "Jerusalem",
+    "province": "AL-QUDS",
+    "postal_code": 19545 
+  },
+  "contact": {
+    "telephone": "+972(2) 626-4426",
+    "website": "http://www.passia.org",
+    "email": "PASSIA@PASSIA.ORG",
+    "fax": "+970(2) 626-2984"
+  },
+  "funding": "Private",
+  "languages": null,
+  "academic_year": null,
+  "accrediting_agency": null
+}
