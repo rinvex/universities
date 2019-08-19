@@ -1,0 +1,22 @@
+{
+  "name": "Palestinian Academic Network",
+  "alt_name": "PAC",
+  "country": "Palestine",
+  "state": null,
+  "address": {
+    "street": null,
+    "city": null,
+    "province": null,
+    "postal_code": null 
+  },
+  "contact": {
+    "telephone": null,
+    "website": null,
+    "email": null,
+    "fax": null
+  },
+  "funding": null,
+  "languages": null,
+  "academic_year": null,
+  "accrediting_agency": null
+}
