@@ -1,0 +1,22 @@
+{
+  "name": "Ibrahimieh College",
+  "alt_name": "IC",
+  "country": "Palestine",
+  "state": null,
+  "address": {
+    "street": "Ibrahimieh College",
+    "city": "Jerusalem",
+    "province": null,
+    "postal_code": null 
+  },
+  "contact": {
+    "telephone": "+970(2) 533-8502",
+    "website": "http://ibrahimieh.edu",
+    "email": "ibr@ibrahimieh.edu",
+    "fax": "+970(2) 626-2984"
+  },
+  "funding": "Private",
+  "languages": null,
+  "academic_year": null,
+  "accrediting_agency": null
+}
