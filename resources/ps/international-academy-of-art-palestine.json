@@ -1,0 +1,22 @@
+{
+  "name": "International Academy of Art Palestine",
+  "alt_name": null,
+  "country": "Palestine",
+  "state": null,
+  "address": {
+    "street": null,
+    "city": "Ramallah",
+    "province": null,
+    "postal_code": null 
+  },
+  "contact": {
+    "telephone": null,
+    "website": "https://www.artacademy.ps/",
+    "email": null,
+    "fax": null
+  },
+  "funding": null,
+  "languages": null,
+  "academic_year": null,
+  "accrediting_agency": null
+}
