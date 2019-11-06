@@ -72,7 +72,7 @@ class UniversityLoaderTest extends TestCase
     /** @test */
     public function it_returns_country_universities_array()
     {
-        $this->assertEquals(127, count(UniversityLoader::universities('egypt')));
+        $this->assertEquals(129, count(UniversityLoader::universities('egypt')));
         $this->assertIsArray(UniversityLoader::universities('egypt'));
         $this->assertContains('Cairo University', UniversityLoader::universities('egypt'));
     }
@@ -251,7 +251,7 @@ class UniversityLoaderTest extends TestCase
     /** @test */
     public function it_gets_file_content()
     {
-        $this->assertStringEqualsFile(__DIR__.'/../resources/names.json', self::$methods['getFile']->invoke(null, __DIR__.'/../resources/names.json'));
+        $this->assertStringEqualsFile(__DIR__.'/../../resources/names.json', self::$methods['getFile']->invoke(null, __DIR__.'/../../resources/names.json'));
     }
 
     /** @test */

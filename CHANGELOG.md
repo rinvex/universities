@@ -5,6 +5,23 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](CONTRIBUTING.md).
 
 
+## [v3.1.2] - 2019-09-03
+- Add missing universities
+  - add Kuwait College for Science and Technology
+  - add The Public Authority for Applied Education and Training
+  - add some universities in kuwait
+- Use $_SERVER instead of $_ENV for PHPUnit
+
+## [v3.1.1] - 2019-06-14
+- Add missing universities 
+  - Suez University 
+  - add Zewail City of Science and Technology 
+  - add New York University Abu Dhabi 
+  - add STMIK STIKOM Bali 
+  - add Siddaganga Institute of Technology 
+  - add Al-Hussein Technical University 
+  - add Academy of Cryptography Techniques
+
 ## [v3.1.0] - 2019-06-02
 - Update composer deps
 - Drop PHP 7.1 travis test
@@ -54,6 +71,8 @@ This project adheres to [Semantic Versioning](CONTRIBUTING.md).
 ## v1.0.0 - 2017-01-07
 - Tag first release
 
+[v3.1.2]: https://github.com/rinvex/universities/compare/v3.1.1...v3.1.2
+[v3.1.1]: https://github.com/rinvex/universities/compare/v3.1.0...v3.1.1
 [v3.1.0]: https://github.com/rinvex/universities/compare/v3.0.0...v3.1.0
 [v3.0.0]: https://github.com/rinvex/universities/compare/v2.0.1...v3.0.0
 [v2.0.1]: https://github.com/rinvex/universities/compare/v2.0.0...v2.0.1
