@@ -32,7 +32,7 @@ class UniversityTest extends TestCase
                 'postal_code' => '12613',
             ],
             'contact' => [
-                    'telephone' => '+20(2) 572-9584',
+                'telephone' => '+20(2) 572-9584',
                 'website' => 'http://www.cu.edu.eg',
                 'email' => 'scc@cu.edu.eg',
                 'fax' => '+20(2) 568-8884',
