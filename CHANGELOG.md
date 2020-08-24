@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](CONTRIBUTING.md).
 
 
+## [v4.0.2] - 2020-08-25
+- add Kirinyaga University in Kenya (#33)
+- add HiLCoE School of Computer Science and Technology in Ethiopia
+- add jeddah university (#31)
+- Add Riara University in kenya (#29)
+- add BML munjal university in india (#28)
+- add 1337 school in morocco (#27)
+
 ## [v4.0.1] - 2020-06-15
 - Drop PHP 7.2 & 7.3 support from travis
 - Add missing universities in Saudia Arabia (#25)
@@ -90,6 +98,7 @@ This project adheres to [Semantic Versioning](CONTRIBUTING.md).
 ## v1.0.0 - 2017-01-07
 - Tag first release
 
+[v4.0.2]: https://github.com/rinvex/universities/compare/v4.0.1...v4.0.2
 [v4.0.1]: https://github.com/rinvex/universities/compare/v4.0.0...v4.0.1
 [v4.0.0]: https://github.com/rinvex/universities/compare/v3.1.4...v4.0.0
 [v3.1.4]: https://github.com/rinvex/universities/compare/v3.1.3...v3.1.4
