@@ -5,6 +5,10 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](CONTRIBUTING.md).
 
 
+## [v4.0.4] - 2020-10-24
+- add some universities in Bahrain, Uganda and Vietnam (#38)
+- add British University of Bahrain (#37)
+
 ## [v4.0.3] - 2020-09-22
 - add missing universities in tanzania (#35)
 - add the east african university in Kenya (#34)
@@ -102,7 +106,8 @@ This project adheres to [Semantic Versioning](CONTRIBUTING.md).
 ## v1.0.0 - 2017-01-07
 - Tag first release
 
-[v4.0.3]: https://github.com/rinvex/universities/compare/v4.0.1...v4.0.2
+[v4.0.4]: https://github.com/rinvex/universities/compare/v4.0.3...v4.0.4
+[v4.0.3]: https://github.com/rinvex/universities/compare/v4.0.2...v4.0.3
 [v4.0.2]: https://github.com/rinvex/universities/compare/v4.0.1...v4.0.2
 [v4.0.1]: https://github.com/rinvex/universities/compare/v4.0.0...v4.0.1
 [v4.0.0]: https://github.com/rinvex/universities/compare/v3.1.4...v4.0.0
