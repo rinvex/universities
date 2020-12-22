@@ -5,6 +5,10 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](CONTRIBUTING.md).
 
 
+## [v4.0.5] - 2020-12-22
+- Update composer dependencies
+- add international university of rabat in Morocco (#40)
+
 ## [v4.0.4] - 2020-10-24
 - add some universities in Bahrain, Uganda and Vietnam (#38)
 - add British University of Bahrain (#37)
@@ -106,6 +110,7 @@ This project adheres to [Semantic Versioning](CONTRIBUTING.md).
 ## v1.0.0 - 2017-01-07
 - Tag first release
 
+[v4.0.5]: https://github.com/rinvex/universities/compare/v4.0.4...v4.0.5
 [v4.0.4]: https://github.com/rinvex/universities/compare/v4.0.3...v4.0.4
 [v4.0.3]: https://github.com/rinvex/universities/compare/v4.0.2...v4.0.3
 [v4.0.2]: https://github.com/rinvex/universities/compare/v4.0.1...v4.0.2
