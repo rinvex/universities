@@ -80,7 +80,7 @@ $egyptUniversities = universities('eg');
 ```
 
 > **Notes:**
-> - **Rinvex University** is framework-agnostic, so it's compatible with any PHP framework whatsoever without any dependencies at all, except for the PHP version itself **^7.4.0**. Awesome, huh? :smiley:
+> - **Rinvex University** is framework-agnostic, so it's compatible with any PHP framework whatsoever without any dependencies at all, except for the PHP version itself **^7.4.0 || ^8.0.0**. Awesome, huh? :smiley:
 > - **Rinvex University** provides the global helpers for your convenience and for ease of use, but in fact it's just wrappers around the underlying `UniversityLoader` class, which you can utilize and use directly if you wish
 
 
@@ -148,4 +148,4 @@ Rinvex is a software solutions startup, specialized in integrated enterprise sol
 
 This software is released under [The MIT License (MIT)](LICENSE).
 
-(c) 2016-2020 Rinvex LLC, Some rights reserved.
+(c) 2016-2021 Rinvex LLC, Some rights reserved.
