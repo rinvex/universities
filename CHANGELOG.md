@@ -5,6 +5,11 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](CONTRIBUTING.md).
 
 
+## [v4.0.8] - 2021-02-16
+- fix Kuwait College for Science and Technology file name (#44)
+- fix Tallinn University of Applied Sciences file name (#43)
+- add Tartous university in Syria (#45)
+
 ## [v4.0.7] - 2021-01-15
 - add tallinn university of applied sciences in Estonia (#42)
 - Enable StyleCI risky mode
@@ -117,6 +122,7 @@ This project adheres to [Semantic Versioning](CONTRIBUTING.md).
 ## v1.0.0 - 2017-01-07
 - Tag first release
 
+[v4.0.8]: https://github.com/rinvex/universities/compare/v4.0.7...v4.0.8
 [v4.0.7]: https://github.com/rinvex/universities/compare/v4.0.6...v4.0.7
 [v4.0.6]: https://github.com/rinvex/universities/compare/v4.0.5...v4.0.6
 [v4.0.5]: https://github.com/rinvex/universities/compare/v4.0.4...v4.0.5
