@@ -5,6 +5,10 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](CONTRIBUTING.md).
 
 
+## [v4.0.9] - 2021-03-15
+- add D.S. ADEGBENRO ICT POLYTECHNIC in Nigeria (#47)
+- add University of Energy and Natural Resources in Ghana (#46)
+
 ## [v4.0.8] - 2021-02-16
 - fix Kuwait College for Science and Technology file name (#44)
 - fix Tallinn University of Applied Sciences file name (#43)
@@ -122,6 +126,7 @@ This project adheres to [Semantic Versioning](CONTRIBUTING.md).
 ## v1.0.0 - 2017-01-07
 - Tag first release
 
+[v4.0.9]: https://github.com/rinvex/universities/compare/v4.0.8...v4.0.9
 [v4.0.8]: https://github.com/rinvex/universities/compare/v4.0.7...v4.0.8
 [v4.0.7]: https://github.com/rinvex/universities/compare/v4.0.6...v4.0.7
 [v4.0.6]: https://github.com/rinvex/universities/compare/v4.0.5...v4.0.6
