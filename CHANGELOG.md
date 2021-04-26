@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](CONTRIBUTING.md).
 
 
+## [v4.0.10] - 2021-04-27
+- fix typo in some universities names
+- add the cooperative university of kenya to kenya list (#50)
+- add joseph ayo babalola university in Nigeria (#49)
+- add middlesex university in Mauritius (#48)
+
 ## [v4.0.9] - 2021-03-15
 - add D.S. ADEGBENRO ICT POLYTECHNIC in Nigeria (#47)
 - add University of Energy and Natural Resources in Ghana (#46)
@@ -126,6 +132,7 @@ This project adheres to [Semantic Versioning](CONTRIBUTING.md).
 ## v1.0.0 - 2017-01-07
 - Tag first release
 
+[v4.0.10]: https://github.com/rinvex/universities/compare/v4.0.9...v4.0.10
 [v4.0.9]: https://github.com/rinvex/universities/compare/v4.0.8...v4.0.9
 [v4.0.8]: https://github.com/rinvex/universities/compare/v4.0.7...v4.0.8
 [v4.0.7]: https://github.com/rinvex/universities/compare/v4.0.6...v4.0.7
