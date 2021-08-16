@@ -5,6 +5,11 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](CONTRIBUTING.md).
 
 
+## [v4.0.12] - 2021-08-06
+- fix some universities website link (#55) (b97eb040)
+- Update composer dependencies (c6e7443a)
+- Add three missing Brazilian universities (9c64e574)
+
 ## [v4.0.11] - 2021-05-07
 - add national institute of information technology in Ghana (#52)
 - Upgrade to GitHub-native Dependabot (#53)
@@ -136,6 +141,7 @@ This project adheres to [Semantic Versioning](CONTRIBUTING.md).
 ## v1.0.0 - 2017-01-07
 - Tag first release
 
+[v4.0.12]: https://github.com/rinvex/universities/compare/v4.0.11...v4.0.12
 [v4.0.11]: https://github.com/rinvex/universities/compare/v4.0.10...v4.0.11
 [v4.0.10]: https://github.com/rinvex/universities/compare/v4.0.9...v4.0.10
 [v4.0.9]: https://github.com/rinvex/universities/compare/v4.0.8...v4.0.9
