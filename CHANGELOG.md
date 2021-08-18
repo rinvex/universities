@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](CONTRIBUTING.md).
 
 
+## [v4.0.13] - 2021-08-18
+- fix The Polytechnic, Ibadan worng website link (#60)
+- fix some universities website link (#59)
+- add Metropolitan International University in Uganda (#57)
+- add Bangamata Sheikh Fojilatunnesa Mujib Science and Technology University in Bangladesh (#58)
+- add Sri Satya Sai University of Technology and Medical Sciences in India (#56)
+
 ## [v4.0.12] - 2021-08-06
 - fix some universities website link (#55) (b97eb040)
 - Update composer dependencies (c6e7443a)
@@ -141,6 +148,7 @@ This project adheres to [Semantic Versioning](CONTRIBUTING.md).
 ## v1.0.0 - 2017-01-07
 - Tag first release
 
+[v4.0.13]: https://github.com/rinvex/universities/compare/v4.0.12...v4.0.13
 [v4.0.12]: https://github.com/rinvex/universities/compare/v4.0.11...v4.0.12
 [v4.0.11]: https://github.com/rinvex/universities/compare/v4.0.10...v4.0.11
 [v4.0.10]: https://github.com/rinvex/universities/compare/v4.0.9...v4.0.10
