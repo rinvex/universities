@@ -5,6 +5,9 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](CONTRIBUTING.md).
 
 
+## [v5.0.0] - 2021-08-22
+- Drop PHP v7 support, and upgrade rinvex package dependencies to next major version
+
 ## [v4.0.13] - 2021-08-18
 - fix The Polytechnic, Ibadan worng website link (#60)
 - fix some universities website link (#59)
@@ -148,6 +151,7 @@ This project adheres to [Semantic Versioning](CONTRIBUTING.md).
 ## v1.0.0 - 2017-01-07
 - Tag first release
 
+[v5.0.0]: https://github.com/rinvex/universities/compare/v4.0.13...v5.0.0
 [v4.0.13]: https://github.com/rinvex/universities/compare/v4.0.12...v4.0.13
 [v4.0.12]: https://github.com/rinvex/universities/compare/v4.0.11...v4.0.12
 [v4.0.11]: https://github.com/rinvex/universities/compare/v4.0.10...v4.0.11
