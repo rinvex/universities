@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](CONTRIBUTING.md).
 
 
+## [v5.0.1] - 2021-10-05
+- add missing universities (#61)
+  - add university of global village in Bangladesh
+  - add polytechnics mauritius
+  - add university of bahri in sudan
+  - add chittagong medical college to Bangladesh list
+
 ## [v5.0.0] - 2021-08-22
 - Drop PHP v7 support, and upgrade rinvex package dependencies to next major version
 
@@ -151,6 +158,7 @@ This project adheres to [Semantic Versioning](CONTRIBUTING.md).
 ## v1.0.0 - 2017-01-07
 - Tag first release
 
+[v5.0.1]: https://github.com/rinvex/universities/compare/v5.0.0...v5.0.1
 [v5.0.0]: https://github.com/rinvex/universities/compare/v4.0.13...v5.0.0
 [v4.0.13]: https://github.com/rinvex/universities/compare/v4.0.12...v4.0.13
 [v4.0.12]: https://github.com/rinvex/universities/compare/v4.0.11...v4.0.12
