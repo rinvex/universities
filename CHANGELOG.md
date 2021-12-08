@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](CONTRIBUTING.md).
 
 
+## [v5.0.2] - 2021-12-08
+- fix Ruaha Catholic University file name (#63)
+- add universities in Egypt (#62)
+  - add german international university to egypt list
+  - add Egypt japan university of science and technology to Egypt list
+
 ## [v5.0.1] - 2021-10-05
 - add missing universities (#61)
   - add university of global village in Bangladesh
@@ -158,6 +164,7 @@ This project adheres to [Semantic Versioning](CONTRIBUTING.md).
 ## v1.0.0 - 2017-01-07
 - Tag first release
 
+[v5.0.2]: https://github.com/rinvex/universities/compare/v5.0.1...v5.0.2
 [v5.0.1]: https://github.com/rinvex/universities/compare/v5.0.0...v5.0.1
 [v5.0.0]: https://github.com/rinvex/universities/compare/v4.0.13...v5.0.0
 [v4.0.13]: https://github.com/rinvex/universities/compare/v4.0.12...v4.0.13
