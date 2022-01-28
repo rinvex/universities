@@ -5,6 +5,9 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](CONTRIBUTING.md).
 
 
+## [v5.0.3] - 2022-01-29
+- fix coperative university of kenya file name (#65)
+
 ## [v5.0.2] - 2021-12-08
 - fix Ruaha Catholic University file name (#63)
 - add universities in Egypt (#62)
@@ -164,6 +167,7 @@ This project adheres to [Semantic Versioning](CONTRIBUTING.md).
 ## v1.0.0 - 2017-01-07
 - Tag first release
 
+[v5.0.3]: https://github.com/rinvex/universities/compare/v5.0.2...v5.0.3
 [v5.0.2]: https://github.com/rinvex/universities/compare/v5.0.1...v5.0.2
 [v5.0.1]: https://github.com/rinvex/universities/compare/v5.0.0...v5.0.1
 [v5.0.0]: https://github.com/rinvex/universities/compare/v4.0.13...v5.0.0
