@@ -5,6 +5,15 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](CONTRIBUTING.md).
 
 
+## [v5.0.4] - 2022-05-15
+- fix Specialized Institute of Applied Technology file name (#73)
+- add Bangabandhu Sheikh Mujibur Rahman Digital University to Bangladesh (#72)
+- add Ogun State Institute of Technology to Nigeria (#71)
+- add Faridpur Engineering College to Bangladesh (#70)
+- add universities to Rwanda (#69)
+- fix new york university abu dhabi file name (#68)
+- Add University of Brahmanbaria to Bangladesh list (#66)
+ 
 ## [v5.0.3] - 2022-01-29
 - fix coperative university of kenya file name (#65)
 
@@ -167,6 +176,7 @@ This project adheres to [Semantic Versioning](CONTRIBUTING.md).
 ## v1.0.0 - 2017-01-07
 - Tag first release
 
+[v5.0.4]: https://github.com/rinvex/universities/compare/v5.0.3...v5.0.4
 [v5.0.3]: https://github.com/rinvex/universities/compare/v5.0.2...v5.0.3
 [v5.0.2]: https://github.com/rinvex/universities/compare/v5.0.1...v5.0.2
 [v5.0.1]: https://github.com/rinvex/universities/compare/v5.0.0...v5.0.1
