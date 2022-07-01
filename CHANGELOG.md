@@ -5,6 +5,9 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](CONTRIBUTING.md).
 
 
+## [v5.0.6] - 2022-07-02
+- Update Antonine University information #76
+
 ## [v5.0.5] - 2022-06-20
 - add Aksum University to Ethiopia list (#74)
 - add Microlink Information Technology College to Ethiopia (#75)
@@ -180,6 +183,7 @@ This project adheres to [Semantic Versioning](CONTRIBUTING.md).
 ## v1.0.0 - 2017-01-07
 - Tag first release
 
+[v5.0.6]: https://github.com/rinvex/universities/compare/v5.0.5...v5.0.6
 [v5.0.5]: https://github.com/rinvex/universities/compare/v5.0.4...v5.0.5
 [v5.0.4]: https://github.com/rinvex/universities/compare/v5.0.3...v5.0.4
 [v5.0.3]: https://github.com/rinvex/universities/compare/v5.0.2...v5.0.3
