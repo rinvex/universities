@@ -5,6 +5,10 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](CONTRIBUTING.md).
 
 
+## [v5.0.7] - 2022-08-07
+- Update Prince Mohammad Bin Fahd University contacts (#78)
+- fix gumushane-university file name (#77)
+
 ## [v5.0.6] - 2022-07-02
 - Update Antonine University information #76
 
@@ -183,6 +187,7 @@ This project adheres to [Semantic Versioning](CONTRIBUTING.md).
 ## v1.0.0 - 2017-01-07
 - Tag first release
 
+[v5.0.7]: https://github.com/rinvex/universities/compare/v5.0.6...v5.0.7
 [v5.0.6]: https://github.com/rinvex/universities/compare/v5.0.5...v5.0.6
 [v5.0.5]: https://github.com/rinvex/universities/compare/v5.0.4...v5.0.5
 [v5.0.4]: https://github.com/rinvex/universities/compare/v5.0.3...v5.0.4
