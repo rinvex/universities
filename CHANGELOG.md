@@ -4,6 +4,9 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](CONTRIBUTING.md).
 
+## [v6.1.0] - 2023-05-02
+- 25371d34: Add support for Laravel v11, and drop support for Laravel v9
+- a26a20d2: Update phpunit to v10.1 from v9.5
 
 ## [v6.0.0] - 2023-01-09
 - Drop PHP v8.0 support and update composer dependencies
@@ -190,6 +193,7 @@ This project adheres to [Semantic Versioning](CONTRIBUTING.md).
 ## v1.0.0 - 2017-01-07
 - Tag first release
 
+[v6.1.0]: https://github.com/rinvex/universities/compare/v6.0.0...v6.1.0
 [v6.0.0]: https://github.com/rinvex/universities/compare/v5.0.7...v6.0.0
 [v5.0.7]: https://github.com/rinvex/universities/compare/v5.0.6...v5.0.7
 [v5.0.6]: https://github.com/rinvex/universities/compare/v5.0.5...v5.0.6
