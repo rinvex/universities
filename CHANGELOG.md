@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](CONTRIBUTING.md).
 
 
+## [v6.1.3] - 2024-09-17
+- add some missing universities (#89)
+- add Egyptian Chinese University to Egypt list
+- add Ashur University to Iraq list
+- add Egypt University of Informatics to Egypt list
+
 ## [v6.1.2] - 2024-05-14
 - fix some universities names (#88)
 - fix Ogun State file name (#87)
@@ -201,6 +207,8 @@ This project adheres to [Semantic Versioning](CONTRIBUTING.md).
 ## v1.0.0 - 2017-01-07
 - Tag first release
 
+[v6.1.3]: https://github.com/rinvex/universities/compare/v6.1.2...v6.1.3
+[v6.1.2]: https://github.com/rinvex/universities/compare/v6.1.1...v6.1.2
 [v6.1.1]: https://github.com/rinvex/universities/compare/v6.1.0...v6.1.1
 [v6.1.0]: https://github.com/rinvex/universities/compare/v6.0.0...v6.1.0
 [v6.0.0]: https://github.com/rinvex/universities/compare/v5.0.7...v6.0.0
